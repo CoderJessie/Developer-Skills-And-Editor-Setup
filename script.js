@@ -138,3 +138,17 @@ TEST DATA 2: [12, 5, -5, 0, 4]
 // - Strings needs to contain day (index + 1)
 // - Add ... between elements and start and end of string
 // - Log string to console
+
+const t1 = [17, 21, 23];
+const t2 = [12, 5, -5, 0, 4];
+
+console.log(`...${t1[0]}*C ... ${t1[1]}*C ... ${t1[2]}*C ...`);
+
+const printForecast = function (arr) {
+	let str = '';
+	for (let i = 0; i < arr.length; i++) {
+		str += `${arr[i]}*C in ${i + 1} days ...`;
+	}
+	console.log('...' + str);
+};
+printForecast(t1);
